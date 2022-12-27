@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>335099_web_1</title>
+        <style>
+            body {
+                font-family: monospace, "Georgia";
+                font-size: 14px;
+                background-color:cornflowerblue;
+            }
+            input:focus{
+                background-color: silver;
+            }
+            div::selection{
+                background-color: silver;
+            }
+            .button:hover {
+                background-color: silver;      
+            }
+            .center-labeled:nth-child(odd)   {
+                
+                font-style: oblique;
+                font-size:16px;
+            }
+            #main{
+                width: 100%;
+                border-spacing: 1em;
+            }
+            #status-table{
+                width: 60%;
+            }
+            .validation-status{
+                color: red;
+                font-size: 14px;
+                font-style: oblique;
+                margin-top: 0.2%;
+                margin-bottom: 0.2%;
+            }
+            #hat{
+                font-size: 18px;
+                padding-bottom: 0.5%;
+                color:beige;
+                background-color:cornflowerblue;
+
+            }
+            .content-class{
+                vertical-align: top;
+                background-color: beige;
+                padding-bottom: 0.5%;
+                padding-top: 0.5%;
+                
+            }
+
+            .header-class{
+                width: 100%;
+                color:beige;
+                background-color: cornflowerblue;
+                text-align: center;
+                font-size: 22px;
+            }
+            .image-class{
+                text-align: center;
+            }
+            #input-plate{
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            
+            .input-label{
+                width: 15%;
+                font-weight: bold;
+            }
+            #input-y{
+                width: 80%;
+                height: 20%;
+            }
+            #status-table {
+                 width: 100%;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            .center-labeled{
+                display: inline-block;
+                font-size: 14px;
+                position: relative;
+            }
+            .left-labeled{
+                display: inline-block;
+                font-size:14px;
+                position: relative;
+            }
+            .right-labeled{
+                float:right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <!--status-->>
+            <div id="status" class="content-class">
+                <table id="status-table" class="header-class">
+                    <tr class="status-header">
+                      <th>x</th>
+                      <th>y</th>
+                      <th>R</th>
+                      <th>Execute time</th>
+                      <th>Now time</th>
+                      <th>In area</th>
+                    </tr>
+                  </table>
+            </div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="validate.js"></script>
+    </body>
+</html>
